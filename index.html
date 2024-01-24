@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Guilherme Santa Rosa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projetos.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/026772c9c1.js" c   rossorigin="anonymous"></script>
+
+    <style>
+
+    </style>
+
+
+    <script type="text/javascript">
+        window.onload = function(){
+            (function(d, script) {
+            script = d.createElement('script');
+            script.type = 'text/javascript';
+            script.async = true;
+            script.src = 'https://w.app/widget-v1/EBI84c.js';
+            d.getElementsByTagName('head')[0].appendChild(script);
+            }(document));
+        };
+    </script>
+</head>
+<body>
+    <header class="menu">
+        <h1 style="color: rgb(43, 41, 41);">Guilherme</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#projects-anchor">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="portfolio">
+        <div class="container" id="dark-container">
+            
+            <div class="text-content">
+                <h2>Full Stack Developer</h2>
+                <p>Sou Guilherme Santa Rosa! <br> Pós-graduando na PUC-RIO.
+                </p>
+                <div class="links">
+                   <a href="https://www.linkedin.com/in/guilherme-de-oliveira-santa-rosa-6093461a0/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+                   <a href="https://github.com/GuilhermeOSR" target="_blank"><i class="fa-brands fa-github"></i></a>
+                   <a href="https://api.whatsapp.com/send?phone=+5584991442686&text=Contate-me" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="profile-container">
+                <img class="profile" src="./imgs/gui.png" alt="foto da pessoa do portfólio" width="400" height="400">
+            </div> 
+        </div>
+        <div class="stack ">
+            <ul class="stack-list">
+                <li class="btn-stack" id="html" data-stack="html">Html & Css</li>
+                <li class="btn-stack" data-stack="javascript" id="javascript">JavaScript</li>
+                <li class="btn-stack" data-stack="nodejs" id="nodejs">NodeJS</li>
+                <li class="btn-stack" data-stack="python" id="python">Python</li>
+                <li class="btn-stack" data-stack="banco_de_dados" id="banco_de_dados">Banco de Dados</li>
+                <li class="btn-stack" data-stack="reactjs" id="reactjs">ReactJS</li>
+            </ul>
+        </div>
+    </section>
+    <h3 id="projects-anchor" style="display: flex; justify-content: center; font-size: 2rem; margin-top: 2rem;">PROJETOS</h3>
+    <section class="projects headline" id="Projects">
+        
+        <div class="container projects-grid" id="projects-container">
+            
+        </div>
+    </section>
+    
+    <script>
+        ScrollReveal().reveal('.headline', {
+            delay: 300
+        });
+    </script>
+    <script src="behavior.js"></script>
+
+    <footer>
+        <h3>Desenvolvido por: Guilherme de Oliveira Santa Rosa</h3>
+    </footer>
+</body>
+</html>

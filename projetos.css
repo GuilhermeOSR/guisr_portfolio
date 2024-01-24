@@ -1,0 +1,129 @@
+
+/* Projetos Section */
+
+section.projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+section.projects {
+    width: 60%;
+    margin: 2% auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 1%;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+section.projects .project {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section.projects .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+   
+}
+
+
+section.projects .project .project-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+    height: max-content;
+}
+
+
+
+
+section.projects .project h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+section.projects .project p {
+    font-size: 1rem;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+
+section.projects .project .project-stack {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+    max-height: max-content;    
+    align-items: center;               
+
+}
+
+
+
+section.projects .project .project-stack .project-stack-image {
+    width: 20px;
+    height: 20px;
+
+
+}
+
+.project {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(0); 
+}
+
+
+.project.jump-animation {
+    animation: jump 1s ease forwards;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.projects .noProjects {
+    color: rgb(52, 47, 47);
+    padding: 20px;
+    background-color: rgba(254, 145, 145, 0.734);
+    text-align: center;
+    border-radius: 15px 50px 15px 50px; 
+    
+}
+
+/* Adicione estas regras para a seção de projetos */
+/* Ajuste a largura da seção e o espaçamento */
+@media (max-width: 768px) {
+    section.projects {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    section.projects .projects-grid {
+        gap: 15px;
+    }
+}
+
+
+
+
+
+/* Adicione estas regras para a seção de projetos - Mensagem de "Não há projetos" */
+@media (max-width: 768px) {
+    section.projects .noProjects {
+        font-size: 1.2rem;
+    }
+}
