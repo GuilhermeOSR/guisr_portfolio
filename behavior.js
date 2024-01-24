@@ -45,7 +45,7 @@ const projects = [
     },
     {
     'Titulo': 'Site do Raiwonk',
-    'Desc': 'Site desenvolvido para uma ideia para canal no Youtube.',
+    'Desc': 'Site desenvolvido para canal no Youtube.',
     'Image_url': 'raiwonksite',
     'Stack': ['html', 'css', 'javascript'],
     'Project_url': 'https://raiwonk.4users.com.br'
