@@ -56,7 +56,7 @@ const projects = [
     'Desc': 'Aplicação com objetivo de organizar tarefas e adquirir satisfação ao concluí-las.',
     'Image_url': 'ETES',
     'Stack': ['reactjs', 'javascript', 'nodejs', 'graphql', 'python', 'banco_de_dados'],
-    'Project_url': 'https://raiwonk.4users.com.br'
+    'Project_url': 'https://github.com/GuilhermeOSR/mvp_todopalist_fronta'
     },
 
     {
@@ -64,7 +64,7 @@ const projects = [
     'Desc': 'Gendiesel fornece soluções de energia confiáveis e sustentáveis para residências e empresas',
     'Stack': ['reactjs', 'css', 'tailwindcss', 'javascript', 'nodejs'],
     'Image_url': 'gendiemvp',
-    'Project_url': 'https://raiwonk.4users.com.br'
+    'Project_url': 'https://github.com/GuilhermeOSR/mvp_gendiesel'
     },
 
 ]
