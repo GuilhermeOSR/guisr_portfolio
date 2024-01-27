@@ -1,0 +1,134 @@
+
+.services::-webkit-scrollbar {
+    background: #fff;
+    color: black;
+    height: 9px;
+
+}
+
+.services::-webkit-scrollbar-track {
+    background-color: #fff;
+    
+    
+  }
+
+.services::-webkit-scrollbar-thumb {
+    
+    background: #00BED9;
+  }
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    background-color:#F8F9FC;
+    max-height: 100vh;
+    padding-bottom: 2%;
+    overflow-x:scroll;
+    margin: 60px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  
+    cursor: grab;
+}
+
+
+.card {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 27px;
+    width: 280px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 37px;
+    max-height: 100vh;
+     /* Certifique-se de que o box-sizing está configurado corretamente */
+    box-shadow: 0px 5px 9px #00000029;
+
+    user-select: none;
+   
+}
+
+.card .card-header {
+    border-radius: 37px 0px 54px 0px;
+    color: #FFFFFF;
+    background-color:#00BED9;
+    max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    
+}
+
+.card .card-header h4 {
+    padding: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.card .card-pricing {
+        display: flex; 
+        justify-content: center;
+        
+        
+}
+
+
+
+.card .card-content {
+    padding: 20px;
+}
+
+.card .card-pricing span  {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .card-pricing h5 {
+    font-size: 65px;
+    color: #00BED9;
+    letter-spacing: -1px;
+
+   
+}
+
+.card .card-desc  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+    max-width: 100%;
+}
+
+.card .card-desc p {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    width: 70%;
+    margin-top: 10px;
+    
+
+}
+
+.card .card-desc .contract {
+   background-color:#00BED9;
+   color: #ffffff;
+   border: none;
+   box-shadow: 0px 5px 8px #00000029;
+   width: 80%;
+   margin-top: 30px;
+   height: 58px;
+   font-size: 20px;
+   border-radius: 14px;
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+}
+
+.card .card-desc .contract:hover {
+    background-color: #00AEE2;
+}

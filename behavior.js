@@ -187,3 +187,11 @@ function animateProjects() {
     
 }
 
+//cursor piscando
+
+document.addEventListener("DOMContentLoaded", function() {
+    const cursorElement = document.querySelector('.cursor');
+    setInterval(() => {
+        cursorElement.style.opacity = (cursorElement.style.opacity === '0') ? '1' : '0';
+    }, 550);
+});

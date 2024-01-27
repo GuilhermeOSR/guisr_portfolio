@@ -40,7 +40,18 @@ section.projects .project .project-image {
     height: max-content;
 }
 
+.text-header-projects {
+    display: flex; 
+    justify-content: center; 
+    font-size: 45px; 
+    margin-top: 2rem;
+    transition: color 0.3s ease-in-out;
+    
+}
 
+.text-header-projects:hover {
+    color: #00BED9;
+}
 
 
 section.projects .project h3 {

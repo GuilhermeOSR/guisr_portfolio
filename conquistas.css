@@ -1,0 +1,104 @@
+.achievements {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.achievement-item {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievements-header .text-header {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    color:#2B2929;
+    font-size: 45px;
+    align-items: center;
+    border-top: 2px solid #00BED9;
+    padding: 20px;
+    color: #00BED9;
+    transition: color 0.3s ease-in-out;
+}
+
+
+@keyframes chromaAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+
+.start-diagonal,
+.end-diagonal {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    font-size: 70px;
+    color: #00BED9;
+}
+
+.start-diagonal {
+    left: 0;
+}
+
+.end-diagonal {
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg); /* Inverte a seta para apontar para a direção correta */
+}
+
+.achievement-text {
+    display: flex;
+    font-size: 18px;
+    color: #2B2929;
+    text-align: center;
+    align-items: center;
+    max-width: 300px;
+    line-height: 1.5;
+    z-index: 999;
+    padding: 14px;
+    border-bottom: 2px solid #00BED9;
+}
+
+/* Adicione estilos para destacar o ano */
+.achievement-year {
+    color:#2B2929;
+    font-weight: 200;
+
+}
+
+.ano {
+    color: #00BED9;
+    font-weight: bold;
+}
+
+.achievement-icon {
+    font-size: 26px;
+    color: #00BED9;
+
+   
+}
+
+
+.timeline {
+    position: absolute;
+    top: 18%;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color:#00BED9;
+    z-index:1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+

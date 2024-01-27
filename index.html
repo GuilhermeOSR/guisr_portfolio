@@ -6,9 +6,11 @@
     <title>Portfólio - Guilherme Santa Rosa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="projetos.css">
+    <link rel="stylesheet" href="conquistas.css">
+    <link rel="stylesheet" href="breakpoint.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://kit.fontawesome.com/026772c9c1.js" c   rossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/026772c9c1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <style>
 
     </style>
@@ -24,22 +26,27 @@
             d.getElementsByTagName('head')[0].appendChild(script);
             }(document));
         };
+
+
+        
     </script>
 </head>
 <body>
+    <div class="background-lines"></div>
     <header class="menu">
         <h1 style="color: rgb(43, 41, 41);">Guilherme</h1>
         <nav class="navbar">
             <ul>
                 <li><a href="#projects-anchor">Projetos</a></li>
+                <li><a href="#Achievements">Conquistas</a></li>
             </ul>
         </nav>
     </header>
     <section class="portfolio">
-        <div class="container" id="dark-container">
-            
+        <div class="container" id="dark-container"  >
+
             <div class="text-content">
-                <h2>Full Stack Developer</h2>
+                <h2>Full Stack Developer<span class="cursor"></span></h2>
                 <p>Sou Guilherme Santa Rosa! <br> Pós-graduando na PUC-RIO.
                 </p>
                 <div class="links">
@@ -63,7 +70,7 @@
             </ul>
         </div>
     </section>
-    <h3 id="projects-anchor" style="display: flex; justify-content: center; font-size: 2rem; margin-top: 2rem;">PROJETOS</h3>
+    <h3 class="text-header-projects" id="projects-anchor" >PROJETOS</h3>
     <section class="projects headline" id="Projects">
         
         <div class="container projects-grid" id="projects-container">
@@ -77,9 +84,62 @@
         });
     </script>
     <script src="behavior.js"></script>
-
+    <section class="achievements headline" id="Achievements">
+        <div class="achievements-header">
+            <h4 class="text-header chroma-text">CONQUISTAS</h4>
+   
+        </div>
+        <div class="container achievements-grid " id="achievements-container">
+            <div class="timeline "></div>
+       
+            <div class="start-diagonal">&lt;</div>
+            <div class="end-diagonal"> &lt;/ <div>
+            <script src="conquistas.js"></script>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <script src="services.js"></script>
+        <!-- Adicione mais cards conforme necessário -->
+    </section>
     <footer>
-        <h3>Desenvolvido por: Guilherme de Oliveira Santa Rosa</h3>
+        <div class="footer-container">
+            <!-- Coluna 1: Sobre mim -->
+            <div class="about-me">
+                <h4>Sobre mim</h4>
+                <p>Sou Guilherme Santa Rosa, um entusiasta da tecnologia e desenvolvedor Full Stack. Pós-graduado na PUC-RIO, estou sempre buscando aprender e compartilhar conhecimentos.</p>
+                <br>    
+                <div class="stacks-profile" style="display: flex;align-items: center; gap:4px; ">
+                    <img src="./imgs/stacks/html5.png" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/css3.png" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/tailwindcss.png" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/js.png" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/react.png" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/node.png" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/python.png" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/dba.png" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/graphql.png" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/csharp.png" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/fastapi.svg" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/Bootstrap_logo.svg" style="width: 24px;" alt="">
+                    <img src="./imgs/stacks/wordpress.png" style="width: 24px;" alt="">
+                </div>
+            </div>
+    
+            <!-- Coluna 2: Links para redes sociais -->
+            <div class="social-links">
+                <h4>Redes Sociais</h4>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/GuilhermeOSR" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/seu_instagram/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/seu_linkedin/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=+5584991442686&text=Contate-me" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+                    <li><a href="http://lattes.cnpq.br/seu_lattes" target="_blank">Lattes</a></li>
+                    <li><a href="https://www.frontendmentor.io/profile/seu_usuario" target="_blank">Frontend Mentor</a></li>
+                </ul>
+            </div>
+        </div>
+
     </footer>
 </body>
 </html>
