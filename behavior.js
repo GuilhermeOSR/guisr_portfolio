@@ -180,7 +180,7 @@ function animateProjects() {
     // Instância do ScrollReveal
     const sr = ScrollReveal(revealOptions);
 
-    // Apliqua a animação
+    // Aplica a animação
     const projects = projectsContainer.querySelectorAll('.project');
     sr.reveal(projects);
 

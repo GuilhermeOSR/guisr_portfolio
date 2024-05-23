@@ -53,7 +53,7 @@
 .end-diagonal {
     right: 0;
     bottom: 0;
-    transform: rotate(180deg); /* Inverte a seta para apontar para a direção correta */
+    transform: rotate(180deg); 
 }
 
 .achievement-text {
@@ -69,7 +69,7 @@
     border-bottom: 2px solid #00BED9;
 }
 
-/* Adicione estilos para destacar o ano */
+
 .achievement-year {
     color:#2B2929;
     font-weight: 200;

@@ -90,9 +90,9 @@ section.portfolio .container .text-content h2 {
 }
 .cursor {
     display: inline-block;
-    height: 4px; /* Altura ajustável conforme necessário */
+    height: 4px; 
     width: 20px;
-    background-color: #00BED9; /* Cor da barra ajustável conforme necessário */
+    background-color: #00BED9; 
     animation: cursorBlin
     k 2s infinite;
 
@@ -100,7 +100,7 @@ section.portfolio .container .text-content h2 {
 
 @keyframes cursorBlink {
     0%, 100% {
-        background-color: #00BED9; /* Cor da barra ajustável conforme necessário */
+        background-color: #00BED9; 
     }
     50% {
         background-color: transparent;
@@ -303,7 +303,7 @@ footer h4 {
     font-weight: bold;
 }
 
-/* Adicional: Estilo para o nome do desenvolvedor */
+
 footer h3 {
     margin-top: 20px;
     font-size: 18px;
@@ -365,8 +365,7 @@ footer h3 {
     }
 }
 
-/* Adicione estas regras para a seção de stack */
-/* Ajuste a largura dos botões */
+
 @media (max-width: 768px) {
 
     ::-webkit-scrollbar {
@@ -388,5 +387,71 @@ footer h3 {
         white-space: nowrap;
        
     }
+
+    footer {
+        padding: 3rem;
+    }
+
+
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    
+    .about-me,
+    .social-links {
+        flex: 1;
+        max-width: 500px;
+        
+    }
+    
+    .about-me {
+        text-align: left;
+    }
+    
+    .social-links {
+        text-align: left;
+        margin-top: 1rem;
+    }
+    
+    /* Estilos para os links */
+    .footer-links {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer-links li {
+        margin: 10px 0;
+    }
+    
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px; /* Tamanho do texto dos links */
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .footer-links a:hover {
+        color: #FFD700; /* Cor de destaque ao passar o mouse */
+        text-decoration: underline;
+    }
+    
+    footer h4 {
+        font-size: 22px; /* Tamanho do texto h4 */
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    
+    footer h3 {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
 }
 

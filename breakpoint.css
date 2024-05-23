@@ -3,32 +3,34 @@
     background: #fff;
     color: black;
     height: 9px;
-
+    
 }
 
 .services::-webkit-scrollbar-track {
-    background-color: #fff;
-    
+    background-color: #ECECEC;
+    border-radius: 5px;
     
   }
 
 .services::-webkit-scrollbar-thumb {
-    
     background: #00BED9;
+    border-radius: 5px;
   }
+
+.services-section {
+    background-color:#F8F9FC;
+}
 
 .services {
     display: flex;
     justify-content: center;
     flex-direction: row;
     position: relative;
-    background-color:#F8F9FC;
     max-height: 100vh;
     padding-bottom: 2%;
     overflow-x:scroll;
     margin: 60px;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
+
   
     cursor: grab;
 }
@@ -45,10 +47,11 @@
     margin-left: 20px;
     border-radius: 37px;
     max-height: 100vh;
-     /* Certifique-se de que o box-sizing está configurado corretamente */
+
     box-shadow: 0px 5px 9px #00000029;
 
-    user-select: none;
+    user-select: auto;
+    
    
 }
 

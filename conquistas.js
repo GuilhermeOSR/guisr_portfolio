@@ -24,7 +24,7 @@ achievementsData.forEach((achievement, index) => {
     achievementText.classList.add('achievement-text');
     achievementText.innerHTML = `<p class="achievement-year"><strong class="ano">${achievement.year} |</strong> <a href="${achievement.link}">${achievement.text}</a></p>`;
 
-    // Ajuste para calcular a margem esquerda com base no índice
+    // Ajusta para calcular a margem esquerda com base no índice
     achievementItem.style.marginLeft = index % 2 === 0 ? '-20%' : '20%';
 
 

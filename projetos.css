@@ -116,8 +116,7 @@ section.projects .project .project-stack .project-stack-image {
     
 }
 
-/* Adicione estas regras para a seção de projetos */
-/* Ajuste a largura da seção e o espaçamento */
+
 @media (max-width: 768px) {
     section.projects {
         width: 100%;
@@ -132,7 +131,6 @@ section.projects .project .project-stack .project-stack-image {
 
 
 
-/* Adicione estas regras para a seção de projetos - Mensagem de "Não há projetos" */
 @media (max-width: 768px) {
     section.projects .noProjects {
         font-size: 1.2rem;
