@@ -31,7 +31,7 @@ const Home = () => {
       <div className="w-full xl:w-[550px] flex flex-col items-center xl:items-start
       text-center xl:text-left">
         <h1 className="h1 flex-1 mb-[28px]" >Oi! Sou Guilherme, <br />
-          <TypeAnimation sequence={["Dev. Full Stack", 2000, "Dev. BackEnd", 2000]}
+          <TypeAnimation sequence={["Dev. Full Stack", 2000, "Dev. Backend", 2000, "Dev. Frontend", 2000]}
           wrapper="span" speed={40} className="text-accent" repeat={Infinity}
           cursor={false}/>
         </h1>
