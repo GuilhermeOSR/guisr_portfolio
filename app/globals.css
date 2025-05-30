@@ -1,26 +1,86 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@plugin "tailwind-scrollbar";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1130px;
+  --breakpoint-2xl: 1520px;
+
+  /* Colors */
+  --color-primary: #000; /* Fundo principal escuro */
+  --color-secondary: #062127; /* Fundo secundário */
+  --color-accent: #00bed9; /* Cor principal (botões, destaques) */
+  --color-accent-hover: #00a6bc; /* Hover do accent */
+  --color-tertiary: #08323b; /* Botões ou elementos terciários */
+  --color-tertiary-hover: #0a404c; /* Hover do terciário */
+
+  /* Fonts */
+  --font-primary: 'Sometype Mono';
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-primary bg-primary text-white leading-relaxed;
+}
+
+.h1 {
+  @apply text-[40px] md:text-[52px] xl:text-[56px] leading-[1] tracking-tight font-extrabold;
+}
+
+.h2 {
+  @apply text-[40px] md:text-[52px] xl:text-[38px] leading-[1.15] tracking-tight font-medium;
+}
+
+.h3 {
+  @apply text-[28px] md:text-[30px] xl:text-[32px] leading-[1.2] tracking-tight font-medium;
+}
+
+.h4 {
+  @apply text-[22px] md:text-[26px] font-medium leading-snug;
+}
+
+.container {
+  @apply px-[15px];
+}
+
+/* Botões base */
+.btn {
+  @apply flex items-center justify-center rounded-full cursor-pointer transition-all font-medium h-[56px];
+}
+
+.btn-sm {
+  @apply min-w-[168px] px-5 text-[15px] font-semibold;
+}
+
+.btn-lg {
+  @apply min-w-[200px] px-6;
+}
+
+/* Cores dos botões */
+.btn-accent {
+  @apply bg-accent hover:bg-accent-hover;
+}
+
+.btn-tertiary {
+  @apply bg-tertiary hover:bg-tertiary-hover;
+}
+
+.btn-white {
+  @apply bg-white hover:bg-white/90 text-primary;
+}
+
+/* Swiper */
+.swiper {
+  margin: 0 !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  @apply bg-accent;
 }
