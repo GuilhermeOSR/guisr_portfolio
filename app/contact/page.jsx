@@ -17,6 +17,31 @@ import {HiOutlinePhone, HiOutlineMail} from 'react-icons/hi'
 
 
 const Contact = () => {
+ const [selectedService, setSelectedService] = React.useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const firstname = form.firstname.value;
+    const lastname = form.lastname.value;
+
+    const service = selectedService || 'Não especificado';
+    const messageInput = form.message.value;
+
+    const phoneNumber = '5584991442686'; // Seu número com DDI, sem +
+    const message = `
+Nome: ${firstname} ${lastname} || 
+Serviço: ${service} ||
+
+ 
+Mensagem: ${messageInput}
+    `.trim();
+
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank'); // Abre o WhatsApp Web ou app com a mensagem preenchida
+  };
+
     return (
         <motion.section
                     initial={{opacity: 0}} 
@@ -31,7 +56,7 @@ const Contact = () => {
             <div className="container mx-auto w-full h-full flex flex-col
             items-center xl:justify-center xl:overflow-hidden scrollbar scrollbar-thumb-accent
             scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible">
-               <div class="w-full">
+               <div className="w-full">
                 <div className="flex flex-col xl:flex-row gap-6">
                     {/* info text */}
                     <div className="flex-1 xl:w-[600px] flex flex-col gap-12">
@@ -71,7 +96,7 @@ const Contact = () => {
                     </div>
                     {/* form */}
                     <div className="flex-1">
-                        <form className="flex flex-col gap-6 items-start">
+                        <form className="flex flex-col gap-6 items-start" onSubmit={handleSubmit}>
                             {/* first and last name */}
                             <div className="flex flex-col xl:flex-row gap-6 w-full">
                                 <div className="w-full">
@@ -97,7 +122,7 @@ const Contact = () => {
         
                                 </div>
                             </div>
-                            {/* email */}
+                            {/* email 
                             <div className="w-full">
                                     <Label htmlFor="email">Email <span className="text-accent">*</span>
                                     </Label>
@@ -109,12 +134,13 @@ const Contact = () => {
                                     />
         
                             </div>
+                            */}
                             {/* select */}
                             <div className="w-full">
                                 <Label htmlFor="">
                                 Estou interessado em <span className="text-accent">*</span>
                                 </Label>
-                                <Select name="service" required>
+                                <Select name="service" required value={selectedService} onValueChange={setSelectedService}>
                                     <SelectTrigger id="service" className="w-full !h-12 bg-white/5 border-white/10
                                     px-4"
                                     >
@@ -138,7 +164,7 @@ const Contact = () => {
                                  
                             </div>
                             {/* btn */}
-                            <button className="btn btn-lg btn-accent">
+                            <button className="btn btn-lg btn-accent" >
                                 <div className="flex items-center gap-3">
                                     <span className="font-medium">Enviar mensagem</span>
                                     <HiOutlineArrowLongRight className="text-xl" />
