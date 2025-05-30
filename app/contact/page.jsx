@@ -35,7 +35,7 @@ const Contact = () => {
                 <div className="flex flex-col xl:flex-row gap-6">
                     {/* info text */}
                     <div className="flex-1 xl:w-[600px] flex flex-col gap-12">
-                        {/* text */}
+                        {/* text novo comentario */}
                         <div>
                             <h2 className="h2 mb-6">
                                 Entre em <span className="text-accent">Contato</span>
